@@ -77,9 +77,9 @@ class FruitTree {
       this._harvested = this._qty + qty
       for(let i=0; i<qty; i++) {
         if(this._fruits[i]._quality == 'good') {
-          good++
-        } else {
           bad++
+        } else {
+          good++
         }
       }
       this._harvested += ` (${good} good, ${bad} bad)`
